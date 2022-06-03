@@ -10,6 +10,5 @@ path('about/',views.myabout, name ='about'),
 path('contact/',views.mycontact, name ='contact'),
 path('services/',views.myservices, name='services'),
 path('track/',views.mytrack, name='track'),
-path('searchbar/',views.searchbar, name='searchbar')
 
 		]

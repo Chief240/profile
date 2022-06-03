@@ -1697,6 +1697,7 @@ ul.team-social li a  span.fa{
 @media(max-width:600px) {
 	.agileinfo-logo h2 {
 		font-size: 2em;
+		
 	}
 	.banner-text {
 		padding-top: 28vw;
@@ -1711,6 +1712,7 @@ ul.team-social li a  span.fa{
 	.inner-banner {
 		min-height: 30vw;
 	}
+	
 }	
 @media(max-width:568px) {
 	.top_header {
@@ -1723,6 +1725,7 @@ ul.team-social li a  span.fa{
 		width: 70%;
 		margin: 0 auto;
 	}
+	
 }
 @media(max-width:480px) {
 	.top_header {

@@ -6,11 +6,14 @@ from django.db.models.fields import CharField
 # Create your models here.
 
 class Trackin(models.Model):
-    Tracking_ID = models.CharField(max_length=15)
+    Tracking_ID = models.CharField(max_length=15, blank=True)
+    Name = models.CharField(max_length=50, blank=True)
+    Delivered = models.CharField(max_length=20, blank=True)
     slug = models.SlugField(blank=True)
-    Delivery_Date = models.DateTimeField()
-    Delivery_State = models.CharField(max_length=50)
-    Current_Location = models.CharField(max_length=50)
+    Delivery_Date = models.CharField(max_length=20, blank=True)
+    Delivery_Address = models.CharField(max_length=100, blank=True)
+    Delivery_Country = models.CharField(max_length=50)
+    Current_Location = models.CharField(max_length=50, blank=True)
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.Tracking_ID)
